@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.css';
+	import SignUp from '$lib/components/signUp.svelte';
 </script>
 
 <header class="bg-white">
@@ -43,7 +44,7 @@
 					class="flex items-center gap-x-1 text-lg font-bold leading-6 text-gray-900"
 					aria-expanded="false"
 				>
-					Product
+					Produtos
 					<svg
 						class="h-5 w-5 flex-none text-gray-400"
 						viewBox="0 0 20 20"
@@ -58,14 +59,12 @@
 					</svg>
 				</button>
 			</div>
-			<a href="" class="text-lg font-bold leading-6 text-gray-900">Features</a>
-			<a href="" class="text-lg font-bold leading-6 text-gray-900">Marketplace</a>
-			<a href="" class="text-lg font-bold leading-6 text-gray-900">Company</a>
+			<a href="" class="text-lg font-bold leading-6 text-gray-900">Lançamentos</a>
+			<a href="" class="text-lg font-bold leading-6 text-gray-900">Masculino</a>
+			<a href="" class="text-lg font-bold leading-6 text-gray-900">Feminino</a>
 		</div>
 		<div class="hidden lg:flex lg:flex-1 lg:justify-end">
-			<a href="#" class="text-lg font-bold leading-6 text-gray-900"
-				>Log in <span aria-hidden="true">&rarr;</span></a
-			>
+			<SignUp/>
 		</div>
 	</nav>
 	<!-- Mobile menu, show/hide based on menu open state. -->
